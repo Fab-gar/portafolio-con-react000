@@ -1,0 +1,9 @@
+:root {--bg-color1: rgb(35, 29, 67);
+  --bg-color: rgb(76, 229, 21);
+  --wed-color: rgb(255, 6, 2);
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}

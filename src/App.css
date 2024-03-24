@@ -1,0 +1,17 @@
+.wrapContent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg1{
+  background-color: var(--bg-color1);
+}
+
+
+.subLine{
+  width: 90px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: red;
+}

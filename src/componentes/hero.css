@@ -1,0 +1,316 @@
+.wrapHero{
+    width: 100%;
+   max-width: 2000px;
+  
+   color: white;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+height: 80dvb;
+max-height: 900px;
+
+}
+.heroContent{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.heroContent:nth-child(2){
+    align-items: center;
+}
+.wrapHero h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.wrapHero p{
+    
+    text-align: justify;
+    
+    color: rgb(161, 160, 163);
+    
+}
+/* iconos--*/
+.heroContent > :first-child{
+    margin: 0 auto;
+}
+.card {
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 25 px;
+gap: 20px;
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 30px;
+    border: 2px solid rgb(230, 14, 14);
+    background-color: rgb(42, 42, 100);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+.containerOne:hover{
+    background-color:#465285 ;
+    transition-duration: .3s;
+}
+.containerDos:hover{
+    background-color: #465285;
+    transition-duration: .3s;
+}
+.containerTres:hover{
+    background-color: #465285;
+    transition-duration: .3s;
+}
+.containerCuatro:hover{
+    background-color: #465285;
+    transition-duration: .3s;
+}
+.socialContainer:active{
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+.socialContainer ion-icon {
+    font-size: 25px;
+    fill: aliceblue;
+}
+.socialContainer:hover ion-icon {
+    animation: slide-in-top .3 both;
+}
+@keyframes slide-in-top {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 812px) {
+    .heroContent{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgHero{
+        display: none;
+    }
+}
+
+.heroBtnContainer{
+    align-items: center;
+justify-content: center;
+}
+
+.heroBtn1 {
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    justify-content: end;
+  }
+  
+  .heroBtn1:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .text {
+    position:relative;
+    z-index: 1;
+  }
+  
+  .heroBtn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  /* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #e50000;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position:relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+
+  /*loader*/
+  .bubble {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);
+    animation: animate_4010 8s ease-in-out infinite;
+    justify-content: center;
+  }
+  
+  .bubble:nth-child(2) {
+    position: relative;
+    zoom: 0.45;
+    left: -10px;
+    top: -100px;
+    animation-delay: -4s;
+  }
+  
+  .bubble:nth-child(3) {
+    position: relative;
+    zoom: 0.45;
+    right: -80px;
+    top: -300px;
+    animation-delay: -6s;
+  }
+  
+  .bubble:nth-child(4) {
+    position: relative;
+    zoom: 0.35;
+    left: -120px;
+    bottom: -200px;
+    animation-delay: -3s;
+  }
+  
+  .bubble:nth-child(5) {
+    position: relative;
+    zoom: 0.5;
+    left: 0px;
+    top: 200px;
+    animation-delay: -5s;
+  }
+  
+  @keyframes animate_4010 {
+    0%,100% {
+      transform: translateY(-20px);
+    }
+  
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  
+  .bubble::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+  }
+  
+  .bubble::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+  }
+  
+  .bubble span {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .bubble span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid #0fb4ff;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #ff4484;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(3) {
+    inset: 10px;
+    border-top: 15px solid #ffeb3b;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(4) {
+    inset: 30px;
+    border-left: 15px solid #ff4484;
+    filter: blur(12px);
+  }
+  
+  .bubble span:nth-child(5) {
+    inset: 10px;
+    border-bottom: 10px solid #fff;
+    filter: blur(8px);
+    transform: rotate(330deg);
+  }

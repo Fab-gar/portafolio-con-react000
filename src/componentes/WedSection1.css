@@ -1,0 +1,72 @@
+.wrapContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg1{
+    background-color: rgb(42, 46, 74);
+}
+.bg2{
+    background-color: rgb(34, 38, 58);
+}
+.subWrapContent{
+    width: 90%;
+    max-width: 1950px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    color: rgb(174, 178, 178);
+}
+.topSubcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.subWrapContent span{
+    color: rgb(255, 0, 0);
+}
+.topSubcontent p{
+    color: rgb(189, 188, 187);
+}
+
+
+
+.carServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+
+}
+.serviceCard{
+    width: 250px;
+    height: 200px;
+    margin: 35px 20px;
+    padding: 10px;
+    background-color:#23334e ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+}
+.serviceCard ion-icon{
+font-size: 40px;
+color:red;
+}
+.serviceCard p{
+    
+    text-align: left;
+    color: rgb(137, 148, 148);
+}
